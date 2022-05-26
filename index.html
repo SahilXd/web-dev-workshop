@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        .container {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border: 1px solid white;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+        .man {
+            position: absolute;
+        }
+        
+        @keyframes move {
+            0% {
+                background-color: black;
+                height: 100px;
+                width: 100px;
+                left: 0;
+                right: 0;
+            }
+            25% {
+                background-color: black;
+                height: 100px;
+                width: 1400px;
+            }
+            50% {
+                height: 1100px;
+                width: 1400px;
+                top: 90%;
+            }
+            75% {
+                width: 100px;
+                height: 1100px;
+            }
+            100% {
+                background-color: black;
+                height: 100px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span class="man">Loading....</span>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
